@@ -1,0 +1,39 @@
+@mixin font-face($weight) {
+    font: {
+        family: 'Noto Sans KR';
+        style: normal;
+        weight: $weight;
+    }
+}
+
+@mixin flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@mixin flex-start {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+@mixin flex-end {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+@mixin list-margin-right($margin) {
+    margin-right: $margin;
+    &:last-child {
+        margin-right: 0;
+    }
+}
+
+@mixin list-margin-bottom($margin) {
+    margin-bottom: $margin;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}

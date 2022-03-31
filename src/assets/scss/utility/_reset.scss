@@ -1,0 +1,22 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  overflow: auto;
+}
+
+html, body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  font-family: "Noto Sans KR", sans-serif, "맑은고딕", "malgun gothic", "AppleGothic", "돋움", "dotum", Helvetica, Arial;
+  background: #fcfcfc;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}

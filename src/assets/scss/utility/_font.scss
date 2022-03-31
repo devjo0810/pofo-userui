@@ -1,0 +1,62 @@
+@font-face {
+    @include font-face(100);
+    src: local('Noto Sans Thin'), local('NotoSans-Thin'),
+    url(../fonts/notoSans/eot/NotoSansKR-Thin-Hestia.eot),
+    url(../fonts/notoSans/eot/NotoSansKR-Thin-Hestia.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/notoSans/woff/NotoSansKR-Thin-Hestia.woff) format('woff'),
+    url(../fonts/notoSans/otf/NotoSansKR-Thin-Hestia.otf) format('opentype');
+}
+
+@font-face {
+    @include font-face(300);
+    src: local('Noto Sans Light'), local('NotoSans-Light'),
+    url(../fonts/notoSans/eot/NotoSansKR-Light-Hestia.eot),
+    url(../fonts/notoSans/eot/NotoSansKR-Light-Hestia.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/notoSans/woff/NotoSansKR-Light-Hestia.woff) format('woff'),
+    url(../fonts/notoSans/otf/NotoSansKR-Light-Hestia.otf) format('opentype');
+}
+
+@font-face {
+    @include font-face(350);
+    src: local('Noto Sans DemiLight'), local('NotoSans-DemiLight'),
+    url(../fonts/notoSans/eot/NotoSansKR-DemiLight-Hestia.eot),
+    url(../fonts/notoSans/eot/NotoSansKR-DemiLight-Hestia.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/notoSans/woff/NotoSansKR-DemiLight-Hestia.woff) format('woff'),
+    url(../fonts/notoSans/otf/NotoSansKR-DemiLight-Hestia.otf) format('opentype');
+}
+
+@font-face {
+    @include font-face(400);
+    src: local('Noto Sans Regular'), local('NotoSans-Regular'),
+    url(../fonts/notoSans/eot/NotoSansKR-Regular-Hestia.eot),
+    url(../fonts/notoSans/eot/NotoSansKR-Regular-Hestia.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/notoSans/woff/NotoSansKR-Regular-Hestia.woff) format('woff'),
+    url(../fonts/notoSans/otf/NotoSansKR-Regular-Hestia.otf) format('opentype');
+}
+
+@font-face {
+    @include font-face(500);
+    src: local('Noto Sans Medium'), local('NotoSans-Medium'),
+    url(../fonts/notoSans/eot/NotoSansKR-Medium-Hestia.eot),
+    url(../fonts/notoSans/eot/NotoSansKR-Medium-Hestia.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/notoSans/woff/NotoSansKR-Medium-Hestia.woff) format('woff'),
+    url(../fonts/notoSans/otf/NotoSansKR-Medium-Hestia.otf) format('opentype');
+}
+
+@font-face {
+    @include font-face(700);
+    src: local('Noto Sans Bold'), local('NotoSans-Bold'),
+    url(../fonts/notoSans/eot/NotoSansKR-Bold-Hestia.eot),
+    url(../fonts/notoSans/eot/NotoSansKR-Bold-Hestia.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/notoSans/woff/NotoSansKR-Bold-Hestia.woff) format('woff'),
+    url(../fonts/notoSans/otf/NotoSansKR-Bold-Hestia.otf) format('opentype');
+}
+
+@font-face {
+    @include font-face(900);
+    src: local('Noto Sans Black'), local('NotoSans-Black'),
+    url(../fonts/notoSans/eot/NotoSansKR-Black-Hestia.eot),
+    url(../fonts/notoSans/eot/NotoSansKR-Black-Hestia.eot?#iefix) format('embedded-opentype'),
+    url(../fonts/notoSans/woff/NotoSansKR-Black-Hestia.woff) format('woff'),
+    url(../fonts/notoSans/otf/NotoSansKR-Black-Hestia.otf) format('opentype');
+}
