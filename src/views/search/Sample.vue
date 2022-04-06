@@ -17,7 +17,7 @@ export default {
   },
   methods: {
     alertOpen () {
-      this.$dialog.alert('test')
+      this.$dialog.alert('Sample Update')
     },
     confirmOpen () {
       this.$dialog.confirm('test...Hello')
