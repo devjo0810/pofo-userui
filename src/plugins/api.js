@@ -1,5 +1,5 @@
 import axios from 'axios'
-// import vue from 'vue'
+import vue from 'vue'
 import { API_CONFIG } from '@/config'
 
 export default {
@@ -23,19 +23,19 @@ export default {
 
     api.interceptors.request.use(config => {
       window.log('api request config :', config)
-      // vue.spinner.show()
+      vue.spinner.show()
       return config
     }, error => {
       window.log('api request error :', error)
-      // vue.spinner.hide()
+      vue.spinner.hide()
     })
     api.interceptors.response.use(response => {
       window.log('api response :', response)
-      // vue.spinner.hide()
+      vue.spinner.hide()
       return response
     }, error => {
       window.log('api response error :', error)
-      // vue.spinner.hide()
+      vue.spinner.hide()
     })
 
     Vue.api = api
