@@ -20,7 +20,7 @@ export default {
       this.$dialog.alert('test')
     },
     confirmOpen () {
-      this.$dialog.confirm('test')
+      this.$dialog.confirm('test...Hello')
     },
     spinnerShow () {
       this.$spinner.show()
