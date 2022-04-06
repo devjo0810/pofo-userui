@@ -20,7 +20,7 @@ export default {
       this.$dialog.alert('Sample Update')
     },
     confirmOpen () {
-      this.$dialog.confirm('test...Hello')
+      this.$dialog.confirm('test...Hello asdfasdfadf')
     },
     spinnerShow () {
       this.$spinner.show()
