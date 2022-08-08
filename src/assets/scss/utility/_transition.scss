@@ -27,17 +27,17 @@
 }
 
 /* slide-reverse-fade(left to right) */
-.slide-fade-enter {
+.slide-reverse-fade-enter {
   transform: translateX(-10px);
   opacity: 0;
 }
 
-.slide-fade-enter-active,
-.slide-fade-leave-active {
+.slide-reverse-fade-enter-active,
+.slide-reverse-fade-leave-active {
   transition: all 0.3s ease;
 }
 
-.slide-fade-leave-to {
+.slide-reverse-fade-leave-to {
   transform: translateX(10px);
   opacity: 0;
 }
