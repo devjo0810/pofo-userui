@@ -1,7 +1,13 @@
 <template>
-  <div class="global-spinner-layout" v-if="isShow">
-    <b-spinner />
-  </div>
+  <transition name="fade">
+    <div class="global-spinner-layout" v-if="isShow">
+      <b-spinner
+        style="width: 4rem; height: 4rem;"
+        variant="primary"
+        type="grow"
+      />
+    </div>
+  </transition>
 </template>
 
 <script>

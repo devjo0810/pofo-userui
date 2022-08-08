@@ -1,19 +1,21 @@
 <template>
-  <div
-    class="global-dialog-layout"
-    v-if="isShow"
-  >
-    <b-card class="global-dialog" :title="title">
-      <b-card-text>{{ message }}</b-card-text>
-      <template v-if="type === 'alert'">
-        <b-button @click="close(true)">확인</b-button>
-      </template>
-      <template v-if="type === 'confirm'">
-        <b-button @click="close(true)">확인</b-button>
-        <b-button @click="close(false)">취소</b-button>
-      </template>
-    </b-card>
-  </div>
+  <transition name="fade">
+    <div
+      class="global-dialog-layout"
+      v-if="isShow"
+    >
+      <b-card class="global-dialog" :title="title">
+        <b-card-text>{{ message }}</b-card-text>
+        <template v-if="type === 'alert'">
+          <b-button @click="close(true)">확인</b-button>
+        </template>
+        <template v-if="type === 'confirm'">
+          <b-button @click="close(true)">확인</b-button>
+          <b-button @click="close(false)">취소</b-button>
+        </template>
+      </b-card>
+    </div>
+  </transition>
 </template>
 
 <script>
