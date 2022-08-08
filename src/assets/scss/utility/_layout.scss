@@ -10,6 +10,26 @@
 
 .main-layout {
   .main-header {
+    @include flex-start;
     font-size: 2rem;
+    padding: 5px 2rem;
+    // border-bottom: 1px solid black;
+    box-shadow: 0rem 0.1rem 0.8rem 0.1rem;
+
+    p {
+      cursor: pointer;
+    }
+    a {
+      margin-left: 1rem;
+      cursor: pointer;
+    }
+
+    .btn-area {
+      @include flex-center;
+      margin-left: auto;
+      button {
+        @include list-margin-right(0.5rem);
+      }
+    }
   }
 }

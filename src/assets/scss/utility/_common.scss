@@ -32,6 +32,6 @@
 .button-area {
   @include flex-end;
   button {
-    @include list-margin-right(4px);
+    @include list-margin-right(0.5rem);
   }
 }
