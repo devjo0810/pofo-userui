@@ -1,3 +1,9 @@
 .main-view {
-  
+  position: relative;
+  padding-top: $header-height;
+  min-height: 100vh;
+
+  section {
+    min-height: 54px;
+  }
 }

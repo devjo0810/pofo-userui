@@ -1,0 +1,12 @@
+.pofo-card-wrapper {
+  @include flex-start;
+  flex-wrap: wrap;
+  width: 100%;
+  font-size: 1.5rem;
+  margin: 0;
+}
+
+.pofo-large-card {
+  width: 25%;
+  padding: 10px;
+}
