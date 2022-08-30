@@ -18,9 +18,17 @@ const HTTP_STATUS = {
   notFound: '404'
 }
 
+const WIDGET = {
+  MIN_WIDTH: 200,
+  MIN_HEIGHT: 200,
+  DRAG_HANDLE: '.widget-drag-handle',
+  HANDLES: ['br']
+}
+
 export {
   debug,
   APP,
   API_CONFIG,
-  HTTP_STATUS
+  HTTP_STATUS,
+  WIDGET
 }

@@ -11,6 +11,8 @@ import globalDialog from './global-dialog'
 import globalSpinner from './global-spinner'
 /* vue-awesome-swiper */
 import 'swiper/css/swiper.css'
+/* vue-draggable-resizable */
+import 'vue-draggable-resizable/dist/VueDraggableResizable.css'
 
 window.log = function (...args) {
   if (!debug) return

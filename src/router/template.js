@@ -1,5 +1,3 @@
-const TemplateMain = () => import(/* webpackChunkName: "template" */ '@/views/template/TemplateMain')
-
 export default [
   {
     path: '/template',
@@ -8,7 +6,13 @@ export default [
   {
     path: '/template/main',
     name: 'TemplateMain',
-    component: TemplateMain,
+    component: () => import(/* webpackChunkName: "template" */ '@/views/template/TemplateMain'),
+    meta: { auth: false }
+  },
+  {
+    path: '/template/widget',
+    name: 'TemplateWidget',
+    component: () => import(/* webpackChunkName: "template" */ '@/views/template/TemplateWidget'),
     meta: { auth: false }
   }
 ]
