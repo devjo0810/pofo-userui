@@ -13,6 +13,8 @@ import globalSpinner from './global-spinner'
 import 'swiper/css/swiper.css'
 /* vue-draggable-resizable */
 import 'vue-draggable-resizable/dist/VueDraggableResizable.css'
+/* font-awesome-icon */
+import './font-awesome-icon'
 
 window.log = function (...args) {
   if (!debug) return

@@ -1,7 +1,8 @@
 <template>
   <header class="main-header">
-    <p @click="moveMainView">PoFo</p>
-    <a @click="moveSearchView">검색</a>
+    <p @click="$router.push('/')">PoFo</p>
+    <a @click="$router.push('/search')">검색</a>
+    <a @click="$router.push('/template/widget')">위젯</a>
     <div class="btn-area">
       <b-button>로그인</b-button>
       <b-button>회원가입</b-button>
@@ -11,14 +12,6 @@
 
 <script>
 export default {
-  name: 'MainHeader',
-  methods: {
-    moveMainView () {
-      this.$router.push('/')
-    },
-    moveSearchView () {
-      this.$router.push('/search')
-    }
-  }
+  name: 'MainHeader'
 }
 </script>

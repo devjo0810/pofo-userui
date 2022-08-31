@@ -1,8 +1,11 @@
 <template>
-  <div class="widget-manager">
+  <div
+    class="widget-manager"
+    ref="widgetManager"
+  >
     <WidgetCompo
-      v-for="(widget, i) in widgetList"
-      :key="i"
+      v-for="widget in widgetList"
+      :key="widget.id"
       v-bind="widget"
     />
   </div>
@@ -10,32 +13,22 @@
 
 <script>
 import WidgetCompo from './WidgetCompo'
+import { mapGetters } from 'vuex'
 
 export default {
   name: 'WidgetManager',
   components: {
     WidgetCompo
   },
-  data: () => ({
-    widgetList: [
-      {
-        title: 'Signup',
-        compoName: 'Signup'
-      },
-      {
-        title: 'Grid',
-        compoName: 'Grid'
-      },
-      {
-        title: 'Tree',
-        compoName: 'Tree'
-      }
-    ]
-  })
+  computed: {
+    ...mapGetters({
+      widgetList: 'WidgetManager/getWidgetList'
+    })
+  }
 }
 </script>
 
-<style lang="scss" scoped>
+<style lang="scss">
 .widget-manager {
   width: 100%;
   height: 100%;

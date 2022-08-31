@@ -1,38 +1,56 @@
 <template>
-  <component :is="component" v-if="component" />
+  <div
+    class="widget-body"
+    @click="$emit('widgetBodyClick')"
+  >
+    <component
+      v-if="component"
+      :is="component"
+      v-bind="compoData"
+    />
+  </div>
 </template>
 
 <script>
-// import WidgetMenuGrid from '@/components/widget/menus/WidgetMenuGrid'
-// import WidgetMenuSignup from '@/components/widget/menus/WidgetMenuSignup'
-// import WidgetMenuTree from '@/components/widget/menus/WidgetMenuTree'
-// import WidgetMenuLoading from '@/components/widget/menus/WidgetMenuLoading'
-// import WidgetMenuNotFound from '@/components/widget/menus/WidgetMenuNotFound'
-// import { defineAsyncComponent } from 'vue'
+import Loading from './menus/WidgetMenuLoading'
+import NotFound from './menus/WidgetMenuNotFound'
 
 export default {
   name: 'WidgetBody',
-  props: ['compoName'],
-  data: () => ({
-    component: null
-  }),
-  computed: {
-    loader () {
-      const menuName = this.compoName || 'NotFound'
-      // return `WidgetMenu${compoName}`
-      // return () => import(`./menus/WidgetMenu${menuName}`)
-      return menuName
+  components: {
+    Loading,
+    NotFound,
+    Grid: () => import('./menus/WidgetMenuGrid'),
+    Signup: () => import('./menus/WidgetMenuSignup'),
+    Tree: () => import('./menus/WidgetMenuTree')
+  },
+  props: {
+    compoName: { // Widget 컴포넌트명
+      type: String,
+      default: 'Loading'
+    },
+    compoData: {
+      type: Object,
+      default: () => ({})
     }
   },
-  async mounted () {
-    // await import(`./menus/WidgetMenu${this.compoName}`)
-    // this.loader()
-    //   .then(() => {
-    //       this.component = () => this.loader()
-    //   })
-    //   .catch(() => {
-    //       this.component = () => import('./menus/WidgetMenuNotFound')
-    //   })
+  computed: {
+    component () {
+      let menuName = this.compoName
+      if (!this.$options.components[menuName]) {
+        // 지정된 컴포넌트가 아닐경우 NotFound로 처리
+        menuName = 'NotFound'
+      }
+      return menuName
+    }
   }
 }
 </script>
+
+<style lang="scss">
+.widget-body {
+  padding: 8px;
+  width: 100%;
+  height: calc(100% - 32px);
+}
+</style>
