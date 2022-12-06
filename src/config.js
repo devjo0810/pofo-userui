@@ -25,10 +25,22 @@ const WIDGET = {
   HANDLES: ['br']
 }
 
+const POFO = {
+  TYPE: {
+    PROFILE: 1,
+    PROJECT: 2
+  }
+}
+POFO.COMPO = {
+  [POFO.TYPE.PROFILE]: 'PofoProfileCard',
+  [POFO.TYPE.PROJECT]: 'PofoProjectCard'
+}
+
 export {
   debug,
   APP,
   API_CONFIG,
   HTTP_STATUS,
-  WIDGET
+  WIDGET,
+  POFO
 }

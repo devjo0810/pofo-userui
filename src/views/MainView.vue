@@ -19,7 +19,7 @@
       </section>
       <section class="portfolio-section">
         <PofoCardWrapper
-          pofoSize="lg"
+          :pofoType="POFO.TYPE.PROFILE"
           :items="pofoList"
         />
       </section>
@@ -34,6 +34,7 @@
 import CmCategorySwiper from '@/components/common/CmCategorySwiper'
 import CmCategoryBlock from '@/components/common/CmCategoryBlock'
 import PofoCardWrapper from '@/components/portfolio/PofoCardWrapper'
+import { POFO } from '@/config'
 
 export default {
   name: 'MainView',
@@ -43,6 +44,7 @@ export default {
     PofoCardWrapper
   },
   data: () => ({
+    POFO,
     categoryList: [
       {
         cateNm: 'cate1',

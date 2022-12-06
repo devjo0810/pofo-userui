@@ -10,17 +10,18 @@
 </template>
 
 <script>
-import PofoLargeCard from './PofoLargeCard.vue'
+import PofoProfileCard from './PofoProfileCard.vue'
+import { POFO } from '@/config'
 
 export default {
   name: 'PofoCardWrapper',
   components: {
-    PofoLargeCard
+    PofoProfileCard
   },
   props: {
-    pofoSize: {
-      type: String, // sm, md, lg
-      default: () => 'lg'
+    pofoType: {
+      type: Number, // 1: Profile, 2: Project
+      default: POFO.TYPE.PROFILE
     },
     items: {
       type: Array,
@@ -29,12 +30,7 @@ export default {
   },
   computed: {
     pofoCardComponent () {
-      switch (this.pofoSize) {
-        case 'lg':
-          return 'PofoLargeCard'
-        default:
-          return 'PofoLargeCard'
-      }
+      return POFO.COMPO[this.pofoType]
     }
   }
 }

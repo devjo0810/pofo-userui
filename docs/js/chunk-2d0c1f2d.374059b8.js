@@ -1,0 +1,2 @@
+(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-2d0c1f2d"],{"47e9":function(n,e,u){"use strict";u.r(e);var i=function(){var n=this,e=n._self._c;return e("div",[n._v("WidgetMenuGrid")])},t=[],d={name:"WidgetMenuGrid"},c=d,r=u("2877"),l=Object(r["a"])(c,i,t,!1,null,null,null);e["default"]=l.exports}}]);
+//# sourceMappingURL=chunk-2d0c1f2d.374059b8.js.map
