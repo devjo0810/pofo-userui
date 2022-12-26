@@ -7,3 +7,39 @@
     min-height: 54px;
   }
 }
+
+.login-view {
+  @include flex-center;
+  width: 100%;
+  height: 100%;
+  background-color: gray;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  .container {
+    @include flex-center;
+    .logo-section {
+      display: flex;
+      .context-header-icon {
+        margin-right: 16px;
+        height: 40px;
+        float: left;
+      }
+
+      .context-header-title {
+        font-size: 32px;
+        color: #f4f4f4;
+        float: left;
+        margin: 0;
+      }
+    }
+    .login-section {
+      width: 510px;
+      height: 645px;
+      background: #fff;
+      border-radius: 4px;
+      border: 1px solid hsla(0,0%,100%,0);
+      margin-left: 200px
+    }
+  }
+}

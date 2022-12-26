@@ -9,8 +9,6 @@ import templateRoutes from './template'
 import NotFound from '../views/NotFound'
 import store from '@/store'
 
-import loginRouter from './login'
-
 /**
  * Vue Router 예외제거
  * NavigationDuplicated
@@ -31,7 +29,6 @@ const routes = [
   ...searchRoutes,
   ...signRoutes,
   ...templateRoutes,
-  ...loginRouter,
   { path: '*', name: 'NotFound', component: NotFound }
 ]
 
