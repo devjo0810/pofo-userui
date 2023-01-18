@@ -1,7 +1,7 @@
 <template>
   <div class="common-input-email">
     <label>이메일 주소</label>
-    <input type="email" :value="value" @input="$emit('input', $event.target.value)">
+    <input type="email" class="form-control" :value="value" @input="$emit('input', $event.target.value)">
   </div>
 </template>
 
